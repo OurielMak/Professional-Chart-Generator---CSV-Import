@@ -4,86 +4,87 @@
 [![Affinity](https://img.shields.io/badge/Affinity-2.x-red.svg)](https://affinity.serif.com)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
-> Génère des graphiques professionnels (camemberts, barres, lignes, radar) directement dans Affinity Designer/Publisher à partir de fichiers CSV.
+> Generate professional charts (pie, bar, line, radar) directly in Affinity Designer/Publisher from CSV files.
 
 ![Demo](docs/images/chart-generator-demo.gif)
 
-## ✨ Fonctionnalités
+## ✨ Features
 
-### 📁 Import CSV
-- Sélection de fichier via interface graphique
-- Support des séparateurs `,` `;` `\t`
-- Aperçu des données avant import
-- Détection automatique des colonnes
+### 📁 CSV Import
+- File selection via GUI
+- Supports `,` `;` `\t` separators
+- Data preview before import
+- Automatic column detection
 
-### 📊 6 Types de graphiques
+### 📊 6 Chart Types
 
-| Type | Icône | Utilisation |
+| Type | Icon | Use Case |
 |------|-------|-------------|
-| Camembert (Pie) | 🥧 | Distribution en pourcentage |
-| Anneau (Doughnut) | 🍩 | Camembert avec trou central |
-| Barres verticales | 📊 | Comparaison de valeurs |
-| Barres horizontales | 📈 | Idéal pour longues étiquettes |
-| Lignes (Line) | 📉 | Évolution temporelle |
-| Radar | 🕸️ | Comparaison multi-critères |
+| Pie | 🥧 | Percentage distribution |
+| Doughnut | 🍩 | Pie chart with hollow center |
+| Vertical Bar | 📊 | Value comparison |
+| Horizontal Bar | 📈 | Ideal for long labels |
+| Line | 📉 | Time series / Trends |
+| Radar | 🕸️ | Multi-criteria comparison |
 
-### 🎨 6 Palettes de couleurs
+### 🎨 6 Color Palettes
 
-| Palette | Style | Idéal pour |
+| Palette | Style | Best For |
 |---------|-------|-------------|
-| Chart.js Original | Moderne et dynamique | Dashboards |
-| Corporate BUSCOLOG | Bleu & Jaune | Rapports d'entreprise |
-| Pastel Doux | Tons doux | Présentations élégantes |
-| Vibrant | Couleurs vives | Supports marketing |
-| Monochrome | Niveaux de gris | Impressions pro |
-| Océan / Sunset | Thématiques | Thèmes spécifiques |
+| Chart.js Original | Modern & Dynamic | Dashboards |
+| BUSCOLOG Corporate | Blue & Yellow | Business reports |
+| Soft Pastel | Gentle tones | Elegant presentations |
+| Vibrant | Bright colors | Marketing materials |
+| Monochrome | Grayscale | Professional printing |
+| Ocean / Sunset | Thematic | Specific themes |
 
-### ⚙️ Réglages avancés
+### ⚙️ Advanced Settings
 
 #### Dimensions
-- Largeur / Hauteur personnalisables (400-2000px)
+- Custom width / height (400-2000px)
 
-#### Axes et grille
-- Afficher/cacher la grille
-- Afficher/cacher les axes
-- Couleur des axes (Gris/Noir/Bleu)
+#### Axes & Grid
+- Show/hide grid
+- Show/hide axes
+- Axis color (Gray/Black/Blue)
 
-#### Légende
-- Position (Droite/Gauche/Bas)
-- Format des valeurs (Pourcentage/Valeur/Les deux/Aucun)
-- Hauteur ajustable
+#### Legend
+- Position (Right/Left/Bottom)
+- Value format (Percentage/Value/Both/None)
+- Adjustable height
 
-#### Camembert
-- Rayon (30-95%)
-- Trou intérieur pour doughnut (0-80%)
-- Angle de départ (-360° à 360°)
+#### Pie Chart
+- Radius (30-95%)
+- Inner hole for doughnut (0-80%)
+- Start angle (-360° to 360°)
 
-#### Barres
-- Largeur des barres (30-90%)
-- Option d'affichage des valeurs
+#### Bar Chart
+- Bar width (30-90%)
+- Optional value labels
 
-#### Lignes
-- Épaisseur du trait
-- Taille des points de données
+#### Line Chart
+- Stroke thickness
+- Data point size
 
-#### Radar
-- Nombre d'anneaux ajustable
-- Affichage optionnel des points
+#### Radar Chart
+- Adjustable ring count
+- Optional data point display
 
 ## 📥 Installation
 
-### Méthode 1 : Installation directe
+### Method 1: Direct Installation
 
-1. **Téléchargez** le script `chart-generator.js`
-2. **Ouvrez** Affinity Designer ou Publisher
-3. **Allez dans** `View → Studio → Scripts`
-4. **Cliquez sur** "Add Script" et sélectionnez le fichier
+1. **Download** the `chart-generator.js` script
+2. **Open** `Affinity.studio-window-general-script`
+3. **Go to** `View → Studio → Scripts`
+4. **Click** "Add Script" and select the file
 
-### Méthode 2 : Installation via manifeste
+### Method 2: Manifest Installation
 
 ```bash
-# Clonez le dépôt
+# Clone the repository
 git clone https://github.com/busclog/affinity-scripts.git
 
-# Copiez les scripts dans le dossier Affinity
+# Copy scripts to Affinity folder
 cp affinity-scripts/*.js ~/Library/Application\ Support/Affinity\ Publisher/Scripts/
+```
